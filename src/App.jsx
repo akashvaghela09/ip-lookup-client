@@ -7,6 +7,7 @@ import { Table } from "./components/Table";
 import { Row } from "./components/Row";
 import { DateTimeDisplay } from "./components/DateTimeDisplay";
 import { Skeleton } from "./components/Skeleton";
+import { Toaster } from "./components/Sonner";
 
 const ipLookupUrl = import.meta.env.VITE_IP_LOOKUP_SERVICE;
 
@@ -168,6 +169,9 @@ function App() {
                         </div>
                     )}
                 </div>
+            </div>
+            <div className="absolute right-0 bottom-0">
+                <Toaster />
             </div>
         </div>
     );
